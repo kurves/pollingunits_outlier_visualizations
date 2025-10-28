@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_4ac1d62e60ab1db6f8a781d21d391bee {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_4ac1d62e60ab1db6f8a781d21d391bee" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_4ac1d62e60ab1db6f8a781d21d391bee = L.map(
+                "map_4ac1d62e60ab1db6f8a781d21d391bee",
+                {
+                    center: [4.749729557633049, 6.986714907785122],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 9,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_191f8622f6c637398ada1c09adb4d18e = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_191f8622f6c637398ada1c09adb4d18e.addTo(map_4ac1d62e60ab1db6f8a781d21d391bee);
+        
+    
+            var marker_275f207dfc803257ee703c422dad83ba = L.marker(
+                [4.790171820034353, 6.973645450192907],
+                {
+}
+            ).addTo(map_4ac1d62e60ab1db6f8a781d21d391bee);
+        
+    
+            var icon_8ecc3c6ef7d091eb4fe2d64e5802ad90 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_778c86aca67b8b2120751264ec577b2d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a382ea2fe347630974b83768f7de399f = $(`<div id="html_a382ea2fe347630974b83768f7de399f" style="width: 100.0%; height: 100.0%;"><b>STATE SCHOOL UMUOFEKE</b><br>PU Code: 32-19-09-004<br><b>APC Outlier Score:</b> 117.20<br><br>Polling Unit 'STATE SCHOOL UMUOFEKE' (code: 32-19-09-004) shows a high deviation with an outlier score of 117.20. This suggests significant variation in APC votes compared to neighboring units.</div>`)[0];
+                popup_778c86aca67b8b2120751264ec577b2d.setContent(html_a382ea2fe347630974b83768f7de399f);
+            
+        
+
+        marker_275f207dfc803257ee703c422dad83ba.bindPopup(popup_778c86aca67b8b2120751264ec577b2d)
+        ;
+
+        
+    
+    
+                marker_275f207dfc803257ee703c422dad83ba.setIcon(icon_8ecc3c6ef7d091eb4fe2d64e5802ad90);
+            
+    
+            var marker_ee09dd6d2fab320ff7bef73e5112b5c7 = L.marker(
+                [4.790171820034353, 6.973645450192907],
+                {
+}
+            ).addTo(map_4ac1d62e60ab1db6f8a781d21d391bee);
+        
+    
+            var div_icon_e016fa8b0a6f942efc7a9cf39d114bdd = L.divIcon({
+  "html": "\n                \u003cdiv style=\"font-size: 12px; color: black; background-color: white; \n                            border-radius: 4px; padding: 2px; border: 1px solid gray;\"\u003e\n                    STATE SCHOOL UMUOFEKE (117.20)\n                \u003c/div\u003e\n                ",
+  "className": "empty",
+});
+        
+    
+                marker_ee09dd6d2fab320ff7bef73e5112b5c7.setIcon(div_icon_e016fa8b0a6f942efc7a9cf39d114bdd);
+            
+    
+            var marker_a31acf93f5d2745e696bb19e4a037928 = L.marker(
+                [4.733326925582301, 6.80463650107658],
+                {
+}
+            ).addTo(map_4ac1d62e60ab1db6f8a781d21d391bee);
+        
+    
+            var icon_57be420fc12d9eaf719f6634660d80e4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6ee24e0fb93888c28c3285a6338482a8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_156060fbc29998248be7ee6bfb48cfdb = $(`<div id="html_156060fbc29998248be7ee6bfb48cfdb" style="width: 100.0%; height: 100.0%;"><b>IFOKO TOWN HALL, UPPER SOUTHERN IFOKO III</b><br>PU Code: 32-06-11-018<br><b>APC Outlier Score:</b> 91.49<br><br>Polling Unit 'IFOKO TOWN HALL, UPPER SOUTHERN IFOKO III' (code: 32-06-11-018) shows a high deviation with an outlier score of 91.49. This suggests significant variation in APC votes compared to neighboring units.</div>`)[0];
+                popup_6ee24e0fb93888c28c3285a6338482a8.setContent(html_156060fbc29998248be7ee6bfb48cfdb);
+            
+        
+
+        marker_a31acf93f5d2745e696bb19e4a037928.bindPopup(popup_6ee24e0fb93888c28c3285a6338482a8)
+        ;
+
+        
+    
+    
+                marker_a31acf93f5d2745e696bb19e4a037928.setIcon(icon_57be420fc12d9eaf719f6634660d80e4);
+            
+    
+            var marker_140ec4cf51a8eccfedb3c630beaefda8 = L.marker(
+                [4.733326925582301, 6.80463650107658],
+                {
+}
+            ).addTo(map_4ac1d62e60ab1db6f8a781d21d391bee);
+        
+    
+            var div_icon_a9da89dc4937058e56b7837ab067e001 = L.divIcon({
+  "html": "\n                \u003cdiv style=\"font-size: 12px; color: black; background-color: white; \n                            border-radius: 4px; padding: 2px; border: 1px solid gray;\"\u003e\n                    IFOKO TOWN HALL, UPPER SOUTHERN IFOKO III (91.49)\n                \u003c/div\u003e\n                ",
+  "className": "empty",
+});
+        
+    
+                marker_140ec4cf51a8eccfedb3c630beaefda8.setIcon(div_icon_a9da89dc4937058e56b7837ab067e001);
+            
+    
+            var marker_716be5792333c74b47fc1fe23391fab9 = L.marker(
+                [4.725689927282494, 7.181862772085878],
+                {
+}
+            ).addTo(map_4ac1d62e60ab1db6f8a781d21d391bee);
+        
+    
+            var icon_0439d17bdbc436e515d01f820165b286 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_86936f83e32d983034d4cf6ee17bcf47 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_54e4a817cdc6fbd06da9d5dd25fd2b5d = $(`<div id="html_54e4a817cdc6fbd06da9d5dd25fd2b5d" style="width: 100.0%; height: 100.0%;"><b>TOWN HALL, ALUEKEN</b><br>PU Code: 32-09-03-007<br><b>APC Outlier Score:</b> 87.00<br><br>Polling Unit 'TOWN HALL, ALUEKEN' (code: 32-09-03-007) shows a high deviation with an outlier score of 87.00. This suggests significant variation in APC votes compared to neighboring units.</div>`)[0];
+                popup_86936f83e32d983034d4cf6ee17bcf47.setContent(html_54e4a817cdc6fbd06da9d5dd25fd2b5d);
+            
+        
+
+        marker_716be5792333c74b47fc1fe23391fab9.bindPopup(popup_86936f83e32d983034d4cf6ee17bcf47)
+        ;
+
+        
+    
+    
+                marker_716be5792333c74b47fc1fe23391fab9.setIcon(icon_0439d17bdbc436e515d01f820165b286);
+            
+    
+            var marker_b04861d69d0b2cc4eb4069356b2a70d2 = L.marker(
+                [4.725689927282494, 7.181862772085878],
+                {
+}
+            ).addTo(map_4ac1d62e60ab1db6f8a781d21d391bee);
+        
+    
+            var div_icon_ea3512d391857394886dce94d80299a4 = L.divIcon({
+  "html": "\n                \u003cdiv style=\"font-size: 12px; color: black; background-color: white; \n                            border-radius: 4px; padding: 2px; border: 1px solid gray;\"\u003e\n                    TOWN HALL, ALUEKEN (87.00)\n                \u003c/div\u003e\n                ",
+  "className": "empty",
+});
+        
+    
+                marker_b04861d69d0b2cc4eb4069356b2a70d2.setIcon(div_icon_ea3512d391857394886dce94d80299a4);
+            
+</script>
+</html>

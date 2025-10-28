@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_622184593603c056e014da31005078b8 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_622184593603c056e014da31005078b8" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_622184593603c056e014da31005078b8 = L.map(
+                "map_622184593603c056e014da31005078b8",
+                {
+                    center: [4.8441251117717, 7.203766798177888],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 9,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_db7adea91c83b235f03156cb9e35999b = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_db7adea91c83b235f03156cb9e35999b.addTo(map_622184593603c056e014da31005078b8);
+        
+    
+            var marker_86859ecbf45f46273dc1e5a6c09765ce = L.marker(
+                [4.7339073802908525, 7.237658502561474],
+                {
+}
+            ).addTo(map_622184593603c056e014da31005078b8);
+        
+    
+            var icon_85aee4c072b8f2289d188c823e0f5297 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a72060d9e0a627176e6d36d8c4facef4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_28c0ea63c8b246489a87988e651f4f31 = $(`<div id="html_28c0ea63c8b246489a87988e651f4f31" style="width: 100.0%; height: 100.0%;"><b>C.P.S  I, BOTEM</b><br>PU Code: 32-23-01-002<br><b>LP Outlier Score:</b> 469.17<br><br>Polling Unit 'C.P.S  I, BOTEM' (code: 32-23-01-002) shows a high deviation with an outlier score of 469.17. This suggests significant variation in LP votes compared to neighboring units.</div>`)[0];
+                popup_a72060d9e0a627176e6d36d8c4facef4.setContent(html_28c0ea63c8b246489a87988e651f4f31);
+            
+        
+
+        marker_86859ecbf45f46273dc1e5a6c09765ce.bindPopup(popup_a72060d9e0a627176e6d36d8c4facef4)
+        ;
+
+        
+    
+    
+                marker_86859ecbf45f46273dc1e5a6c09765ce.setIcon(icon_85aee4c072b8f2289d188c823e0f5297);
+            
+    
+            var marker_3c97f0851f6497c31989183e002fe35b = L.marker(
+                [4.7339073802908525, 7.237658502561474],
+                {
+}
+            ).addTo(map_622184593603c056e014da31005078b8);
+        
+    
+            var div_icon_8cde491dc5ee8be92abc14bfc48bcb09 = L.divIcon({
+  "html": "\n                \u003cdiv style=\"font-size: 12px; color: black; background-color: white; \n                            border-radius: 4px; padding: 2px; border: 1px solid gray;\"\u003e\n                    C.P.S  I, BOTEM (469.17)\n                \u003c/div\u003e\n                ",
+  "className": "empty",
+});
+        
+    
+                marker_3c97f0851f6497c31989183e002fe35b.setIcon(div_icon_8cde491dc5ee8be92abc14bfc48bcb09);
+            
+    
+            var marker_6030858f4d321b3bf72a50834fe46310 = L.marker(
+                [5.112718417966206, 7.0965178312988995],
+                {
+}
+            ).addTo(map_622184593603c056e014da31005078b8);
+        
+    
+            var icon_2c47bf2d6e86c1f6742f29f02930c2b6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3e68f69512d608751ed9107064cd2f4d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fad43dbab67ee4ee8e8c764d94cdfa0b = $(`<div id="html_fad43dbab67ee4ee8e8c764d94cdfa0b" style="width: 100.0%; height: 100.0%;"><b>OBONNO TOWN HALL</b><br>PU Code: 32-11-12-007<br><b>LP Outlier Score:</b> 105.00<br><br>Polling Unit 'OBONNO TOWN HALL' (code: 32-11-12-007) shows a high deviation with an outlier score of 105.00. This suggests significant variation in LP votes compared to neighboring units.</div>`)[0];
+                popup_3e68f69512d608751ed9107064cd2f4d.setContent(html_fad43dbab67ee4ee8e8c764d94cdfa0b);
+            
+        
+
+        marker_6030858f4d321b3bf72a50834fe46310.bindPopup(popup_3e68f69512d608751ed9107064cd2f4d)
+        ;
+
+        
+    
+    
+                marker_6030858f4d321b3bf72a50834fe46310.setIcon(icon_2c47bf2d6e86c1f6742f29f02930c2b6);
+            
+    
+            var marker_25e90a44b2272e5777c9a458bf7ae359 = L.marker(
+                [5.112718417966206, 7.0965178312988995],
+                {
+}
+            ).addTo(map_622184593603c056e014da31005078b8);
+        
+    
+            var div_icon_b9de6e4522e2adb482d2ccb941d7f9ce = L.divIcon({
+  "html": "\n                \u003cdiv style=\"font-size: 12px; color: black; background-color: white; \n                            border-radius: 4px; padding: 2px; border: 1px solid gray;\"\u003e\n                    OBONNO TOWN HALL (105.00)\n                \u003c/div\u003e\n                ",
+  "className": "empty",
+});
+        
+    
+                marker_25e90a44b2272e5777c9a458bf7ae359.setIcon(div_icon_b9de6e4522e2adb482d2ccb941d7f9ce);
+            
+    
+            var marker_ce09dc40ce71b6dc3100863698653283 = L.marker(
+                [4.685749537058045, 7.277124060673293],
+                {
+}
+            ).addTo(map_622184593603c056e014da31005078b8);
+        
+    
+            var icon_599ba5cdfb48a5f65e7327638e661ab2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_95912b18151bbd28cf9b7df759cf4958 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_88788560d8209caf7ee2b2480ed35e90 = $(`<div id="html_88788560d8209caf7ee2b2480ed35e90" style="width: 100.0%; height: 100.0%;"><b>STATE SCHOOL II BODO, GIOGO BAAMU II</b><br>PU Code: 32-12-01-012<br><b>LP Outlier Score:</b> 91.00<br><br>Polling Unit 'STATE SCHOOL II BODO, GIOGO BAAMU II' (code: 32-12-01-012) shows a high deviation with an outlier score of 91.00. This suggests significant variation in LP votes compared to neighboring units.</div>`)[0];
+                popup_95912b18151bbd28cf9b7df759cf4958.setContent(html_88788560d8209caf7ee2b2480ed35e90);
+            
+        
+
+        marker_ce09dc40ce71b6dc3100863698653283.bindPopup(popup_95912b18151bbd28cf9b7df759cf4958)
+        ;
+
+        
+    
+    
+                marker_ce09dc40ce71b6dc3100863698653283.setIcon(icon_599ba5cdfb48a5f65e7327638e661ab2);
+            
+    
+            var marker_613897d04176d1623e7ebbba5ec20239 = L.marker(
+                [4.685749537058045, 7.277124060673293],
+                {
+}
+            ).addTo(map_622184593603c056e014da31005078b8);
+        
+    
+            var div_icon_b05da159e9cb030c56ed7f0aedb72111 = L.divIcon({
+  "html": "\n                \u003cdiv style=\"font-size: 12px; color: black; background-color: white; \n                            border-radius: 4px; padding: 2px; border: 1px solid gray;\"\u003e\n                    STATE SCHOOL II BODO, GIOGO BAAMU II (91.00)\n                \u003c/div\u003e\n                ",
+  "className": "empty",
+});
+        
+    
+                marker_613897d04176d1623e7ebbba5ec20239.setIcon(div_icon_b05da159e9cb030c56ed7f0aedb72111);
+            
+</script>
+</html>
